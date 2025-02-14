@@ -4,7 +4,8 @@ library(shiny)
 ui <- fluidPage(
 
   # App title ----
-  titlePanel("Hello Shiny!"),
+  # titlePanel("Hello Shiny!"),
+  titlePanel("Hello RF Old Faithful!"),
 
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -42,17 +43,18 @@ server <- function(input, output) {
   # 1. It is "reactive" and therefore should be automatically
   #    re-executed when inputs (input$bins) change
   # 2. Its output type is a plot
+
+  # faithful is the embedded R dset, version "0" is a locally sourced one.
+  faithful0 <- read.csv("faithful_rf0.csv")
   output$distPlot <- renderPlot({
 
-    x    <- faithful$waiting
+    x    <- faithful0$waiting
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
     hist(x, breaks = bins, col = "#75AADB", border = "white",
          xlab = "Waiting time to next eruption (in mins)",
          main = "Histogram of waiting times")
-
     })
-
 }
 
 # Create Shiny app ----
