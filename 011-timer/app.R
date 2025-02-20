@@ -4,6 +4,9 @@ library(shiny)
 ui <- fluidPage(
 
   h2(textOutput("currentTime"))
+  # so, you can see a bit more clearly how the ui gets its variable
+  # it assumes output$ and then currentTime is var itself.
+  # (or so it would appear).
 
 )
 

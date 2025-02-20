@@ -31,7 +31,7 @@ on another (RHS of tilde).
 Just shows how to use sliders ... I am not a fan, but Shiny certainly seems to think they are great
 and perhaps some decent use cases for them can be found.
 
->> 006-tabsets
+>> 006-tabsets (aka. tabpanels)
 Another showcase for a basic interaction device, tabs that allow subpanel to be selected.
 In this way various graphs (pages) are accessible by the user wishing to see more.
 Not too many extra mind you. Less than 10 most probs.
@@ -50,6 +50,40 @@ validation exercises further on.
 
 >>> 010-download
 An altogether less hzadous task - simply allows a user to download a table, very similar to write.csv().
+
+>>> 011-timer:
+v. simple, just outputs sys.time() to a H2 header text
+it updates every second.
+
+>>> 012-datatables
+uses 3 tab panels for 3 different datasets that allow some customization
+i.e. each table allows you to dosmething differnt, 1) only show some of the columns
+2) ordering a certain column (you have to click its header) 3) and then varying the amount of rows you can see)
+PS. YOu sholuld show total number of rows and columns for these datasets.
+
+>> 013-selectize
+A bit hard to understand. Even the -ize after select, There must be subtle differences.
+the selectize.js library is behind it.
+
+>> 014-onflushed
+Also not easy to understand, delays in reactivity?
+
+>> 015-navbar
+So this really looks like a template, with a higher level tabset, but actually
+does nothing (unlike previous examples)
+
+>> 015-layout-sidebar
+(note has the same number as above in original repo)
+like 001, just has faithful data in hist() form, except slider is on right.
+
+>>> 016-knitr-pdf
+Use mtcars for a linear model of mpg (with a choice of independent variables)
+and generates a quick report with a red line for the regression in the scatter graph.
+The report can be Word, HTML or pdf 
+
+
+
+
 >>> original README.md text:
 
 This is a collection of Shiny examples. You can see them in action on

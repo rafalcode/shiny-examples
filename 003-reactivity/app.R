@@ -75,8 +75,13 @@ server <- function(input, output) {
   # Note that because the data-oriented reactive expressions
   # below don't depend on input$caption, those expressions are
   # NOT called when input$caption changes
+
+ # let's play a little, cahnge all a's to 4's
+  # input2$caption <- gsub("a", "4", input$caption)
+
   output$caption <- renderText({
-    input$caption
+    # input$caption
+    gsub("a", "4", input$caption)
   })
 
   # Generate a summary of the dataset ----
