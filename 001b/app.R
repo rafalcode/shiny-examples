@@ -2,16 +2,19 @@ library(shiny)
 
 # Define UI for app that draws a histogram ----
 ui <- fluidPage(
+  tags$script(src = "some.js"),
   titlePanel("Choose between various \"old Faithful\" style datasets"),
+  h4("Instead of changing number of histograms bins, here we allow different forms of the faithful data be plotted"),
+  h4("blank space"),
 
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
 
     # Sidebar panel for inputs ----
-    sidebarPanel(
+    sidebarPanel(style="background: #AAAAAA", 
 
   radioButtons("radio", label = h3("Choose a dataset"),
-    choices = list("faith0" = 1, "faith1" = 2), selected = 1)
+    choices = list("Original \"faithful\" dataset" = 1, "Manually manipulated \"faithful\"" = 2), selected = 1)
   ),
 
     # Main panel for displaying outputs ----

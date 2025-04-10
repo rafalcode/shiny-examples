@@ -11,6 +11,11 @@ In the end, this is just an exercise how a histogram changes when
 you vary the number of buckets, because that is what the interaction allows you to do.
 Essentially this allows exploratpory visual gauging of the data.
 
+### 001b
+is my riff on 001-hello. I created a www subdirectory in it wiht a file 
+called some.js which stands for "(just) some javascript". Note how this javascritp is then 
+invoked in the app itself.
+
 ### 002-text, no graph here, just a table display of a dataset, plus a selector
 to choose 1 of 3 datasets, and a second selector to determine number of rows to show.
 "rocks " is the biggest one with 4 variables. If we get rid of code display, perhaps some
